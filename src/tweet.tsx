@@ -13,10 +13,10 @@ Theres a 'tweet' class you can use to style your tweet.
 
 export default function Tweet({username, content, timestamp, likes}) {
     const [liked, setLiked] = useState(false)
-    const [likeCount, setLikeCount] = useState(likes);
+    const [likeCount, setLikeCount] = useState(likes)
 
     function handleLike() {
-        setLikeCount(liked ? likeCount - 1 : likeCount + 1);
+        setLikeCount(liked ? likeCount - 1 : likeCount + 1)
         setLiked(!liked)
     }
 
